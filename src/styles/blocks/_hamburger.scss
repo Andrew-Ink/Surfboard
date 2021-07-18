@@ -1,0 +1,49 @@
+.hamburger {
+  position: fixed;
+  top: 1.76rem;
+  right: 1.76rem;
+  height: 24px;
+  width: 26px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  transition: all 0.3s;
+  z-index: 110;
+
+  &--theme-gray {
+    .hamburger__plank{
+      background-color: #666;
+    }
+  }
+
+
+  &--active {
+    .hamburger__plank{
+      &:nth-child(1){
+        opacity: 0;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+        transform-origin: 10% 100%;
+      }
+      
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 40% 70%;
+      }
+    }
+  }
+
+  @include tablets {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+}

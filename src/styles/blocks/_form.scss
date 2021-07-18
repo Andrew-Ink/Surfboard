@@ -1,0 +1,134 @@
+.form {
+  display: flex;
+  column-gap: 1.44rem;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.form__col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  @include tablets {
+    width: 66%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 0.88rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+
+.form__block {
+  flex: 1;
+  margin-right: 0.88rem;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  border-radius: 0.26rem;
+  border: transparent 0.16rem solid;
+  height: 3.2rem;
+  width: 100%;
+
+  &:focus {
+    border-color: #FEDB3F;
+    outline: none;
+  }
+
+  @include tablets {
+    height: 2.11rem;
+  }
+
+  @include phones {
+    height: 2.25rem;
+  }
+
+}
+
+.form__input--textarea {
+  height: 8.4rem;
+  resize: none;
+
+  @include tablets {
+    height: 4.82rem;
+  }
+
+  @include phones {
+    height: 5.12rem;
+  }
+}
+
+.form__row-button {
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+
+.form__error {
+  opacity: 0;
+  font-size: 16px;
+  color: red;
+  height: 1.3rem;
+  width: 100%;
+  background-color:#fff;
+  border-radius: 3px;
+  padding: 2px 0 0 5px;
+  position: absolute;
+  bottom: -29px;
+  right: 0;
+  left: 0;
+  z-index: 5;
+
+  &::before {
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    content: "";
+    // height: 0px;
+    // width: 0px;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    border-top-width: 0;
+
+  }
+
+  &--active {
+    opacity: 1;
+  }
+
+
+}

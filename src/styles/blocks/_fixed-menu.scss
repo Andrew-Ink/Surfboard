@@ -1,0 +1,64 @@
+.fixed-menu {
+  position: fixed;
+  top: 11.8rem;
+  right: 2%;
+
+  &--theme-gray {
+    .fixed-menu__item {
+
+      &--active {
+        border-color: #666;
+      }
+    }
+
+    .fixed-menu__link {
+
+      background: #666;
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+}
+
+.fixed-menu__list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.fixed-menu__item {
+  display: block;
+  position: relative;
+  height: 0.88rem;
+  width: 0.88rem;
+  border-radius: 50%;
+  border: transparent solid 1px;
+  margin-bottom: 0.28rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--active {
+    border-color: #fff;
+  }
+
+
+
+}
+
+.fixed-menu__link {
+  display: block;
+  height: 0.33rem;
+  width: 0.33rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

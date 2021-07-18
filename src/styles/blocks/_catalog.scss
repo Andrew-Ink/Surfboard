@@ -1,0 +1,106 @@
+.section__title__box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.catalog {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.catalog__item {
+  display: flex;
+
+  &:nth-child(1) {
+    .catalog__item-wrap {
+      background: url('./img/backgraund/longboard.jpg');
+      background-position: 50%;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(2) {
+    .catalog__item-wrap {
+      background: url('./img/backgraund/shortboard.jpg');
+      background-position: 55%;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(3) {
+    .catalog__item-wrap {
+      background: url('./img/backgraund/softtop.jpg');
+      background-position: 47%;
+      background-size: cover;
+    }
+  }
+
+  overflow: hidden;
+}
+
+.catalog__item-wrap {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 5.66rem;
+  overflow: hidden;
+
+  @include phones {
+    width: 5rem;
+  }
+
+}
+
+.catalog__item-box {
+  display: flex;
+  background-color:rgba(0%, 0%, 0%, 0.4);
+  align-items: flex-end;
+
+
+
+}
+
+.catalog__item-title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  height: auto;
+  width: auto;
+  display: block;
+  transform: rotate(-90deg);
+  transform-origin: 0 -40%;
+ 
+}
+
+.catalog__button {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+
+
+.catalog__item-content {
+  height: 100%;
+  width: 0;
+  // width: 29.11rem;
+  background-color: rgb(20%, 21%, 22%, 0.9);
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
+.catalog__item-desc {
+  padding: 4.44rem 1.66rem;
+}

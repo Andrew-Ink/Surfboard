@@ -1,0 +1,18 @@
+$tablets: 768px;
+$phones: 480px;
+$basefotnsize: 18px;
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@import "../styles/layout/*scss";
+@import "../styles/blocks/*scss";

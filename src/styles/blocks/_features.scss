@@ -1,0 +1,25 @@
+.hero__features {
+
+  padding-left: 2.5%;
+
+  @include tablets {
+    display: none;
+  } 
+
+}
+
+.feature__image {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.88rem;
+}
+
+.feature__icon {
+  height: 100%;
+  width: 100%;
+  fill: #fff;
+}
+
+.feature__text {
+  max-width: 2.2rem;
+}

@@ -1,0 +1,34 @@
+.social{
+  display: flex;
+  
+}
+
+.social__item {
+  height: 1.11rem;
+  width: 1.11rem;
+  overflow: hidden;
+  margin-right: 0.77rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    .social__icon{
+      fill:#292929;
+    }
+  }
+}
+
+.social__link {
+  height: 100%; 
+  width: 100%;
+  display: block;
+}
+
+.social__icon {
+  height: 100%;
+  width: 100%;
+  fill: #B3B3B3;
+  transition: 0.3s;
+}

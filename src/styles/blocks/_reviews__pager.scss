@@ -1,0 +1,27 @@
+.reviews__pager-list {
+  display: flex;
+  column-gap: 0.33rem;
+}
+
+.reviews__pager-item {
+  position: relative;
+  height: 4.11rem;
+  width: 4.11rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 3;
+  &:hover {
+    border: #FEDB3F solid 0.33rem;
+  }
+  &--active {
+    border: #FEDB3F solid 0.33rem;
+  }
+  
+}
+
+.reviews__pager-photo {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

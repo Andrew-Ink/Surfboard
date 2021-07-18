@@ -1,0 +1,52 @@
+.advantages {
+  display: flex;
+  position: relative;
+  // justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  flex: 1;
+  padding: 0 3%;
+
+
+  &:after {
+    content: url("./img/decor/decor-circles.png");
+    position: absolute;
+    top: 3.3rem;
+    right: 0;
+    transform: translateX(50%);
+
+
+    @include tablets {
+      display: none;
+    }
+    
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include phones {
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+}
+
+

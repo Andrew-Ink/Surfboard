@@ -1,0 +1,54 @@
+.contacts__icon {
+  height: 0.77rem;
+  width: 0.72rem;
+  fill: white;
+  transition: 0.3s;
+}
+
+.contacts__phone {
+  font-size: 22px;
+  line-height: 0.8;
+  font-weight: bold;
+  transition: 0.3s;
+  white-space: nowrap;
+
+  // &:hover {
+  //   color: #B3B3B3;
+
+  //   .contacts__icon {
+  //     fill: #B3B3B3;
+  //   }
+  // }
+}
+
+.contacts__address {
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 0.33rem;
+  font-style: normal;
+}
+
+.contacts__footer {
+
+  @include phones {
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+}
+
+.contacts__phone-footer {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contacts__icon-footer {
+  fill: #000;
+}
+
+.contacts__header {
+  @include tablets {
+    display: none;
+  }
+}

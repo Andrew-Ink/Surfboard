@@ -1,0 +1,146 @@
+.team {
+  @include tablets {
+    min-height: 38.2rem;
+
+  }
+}
+
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 24.44rem;
+  width: 100%;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+
+  }
+}
+
+.team__item {
+  width: 23.4%;
+  display: flex;
+  flex-direction: column;
+  transition: height 0.5s;
+
+  @include tablets {
+    width: auto;
+    height: 1.4rem;
+    margin-bottom: 0.94rem;
+    overflow: hidden;
+
+    &--active {
+      height: 24.2rem;
+
+      .team__title-icon {
+        transform: scale(-100%);
+      }
+
+      .team__content {
+        height: 4.44rem;
+      }
+
+      @include phones {
+        height: 18.43rem;
+      }
+    }
+  }
+
+  &--active {
+
+    .team__title-icon {
+      transform: scale(-100%);
+    }
+
+    .team__content {
+      height: 4.44rem;
+    }
+  }
+
+}
+
+.team__item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column-reverse;
+    margin-bottom: 1.16rem;
+    height: auto;
+  }
+}
+
+
+.team__member {
+  // width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 1.16rem;
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    width: 8.6rem;
+  }
+}
+
+.team__member-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.team__title-button {
+  font-size: 1.16rem;
+  font-weight: 700;
+  color: #292929;
+  background: transparent;
+  border: none;
+  margin-bottom: 0.44rem;
+  cursor: pointer;
+}
+
+.team__title-icon {
+  fill: #292929;
+  height: 7px;
+  width: 9px;
+}
+
+.team__content {
+  height: 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: height 0.3s;
+
+  @include tablets {
+    height: auto;
+  }
+}
+
+.team__content-block {
+  height: 4.44rem;
+  position: absolute;
+  top: 0;
+
+  // @include tablets {
+  //   position: static;
+  // }
+}
+
+.team__subtitle {
+  color: #292929;
+  font-weight: 400;
+  margin-bottom: 0.22rem;
+}
+
+.team__desc {
+  font-weight: 300;
+}

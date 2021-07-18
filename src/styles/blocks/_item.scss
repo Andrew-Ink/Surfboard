@@ -1,0 +1,47 @@
+// product__emergence-menu 
+
+
+.item__img {
+  height: 23px;
+  width: 23px;
+  overflow: hidden;
+}
+
+
+.item__icon {
+  height: 24px;
+  width: 24px;
+  fill: #010002;
+}
+
+.item__title {
+  flex: 1;
+  text-align: left;
+  padding-left: 1rem;;
+}
+
+.item__icon-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item__icon-line-norm {
+  width: 24px;
+  height: 2px;
+}
+
+.item__icon-line-semi {
+  width: 24px;
+  height: 4px;
+}
+
+.item__icon-line-bold {
+  width: 24px;
+  height: 5px;
+}
+
+.item__icon-line-extra {
+  width: 24px;
+  height: 5px;
+}

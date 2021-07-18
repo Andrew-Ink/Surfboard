@@ -1,0 +1,68 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 500%;
+  height: 0;
+  width: 0;
+  z-index: 100;
+
+
+  @include tablets {
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background-color: #313131;
+    transition: all 0.3s;
+    opacity: 0;
+
+    &--active {
+      opacity: 1;
+      left: 0%;
+
+    }
+  }
+}
+
+
+.overlay-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(19%, 19%, 19%, 0.8);
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  
+  &--active {
+    visibility: visible;
+    opacity: 1;
+
+  }
+}
+
+
+.overlay-form__display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9.77rem;
+  width: 17.16rem;
+  background-color: #fff;
+}
+
+.overlay-form__massedge {
+  padding: 0 1rem 1rem;
+  text-align: center;
+
+}

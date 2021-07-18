@@ -1,0 +1,86 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  font-size: 48px;
+  color: #292929;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include phones {
+    font-size: 36px;
+  }
+}
+
+.section__title-team {
+  margin-bottom: 2.94rem;
+
+  @include tablets {
+
+    margin-bottom: 2rem;
+  }
+}
+
+.section-catalog {
+  background: url('./img/backgraund/surf.jpg');
+  color: #fff;
+}
+
+.section__title__box {
+  padding-top: 6.11rem;
+  padding-left: 4.72rem;
+  padding-right: 1rem;
+}
+
+.section__title-catalog  {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section__title-reviews {
+  margin-bottom: 1.77rem;
+}
+
+.section__title-video {
+  margin-bottom: 1.66rem;
+}
+
+.section-products {
+  background-color: #F8FAF9;
+}
+
+.section-video {
+  background: #F8FAF9;
+}
+
+.section-form {
+  background: url('./img/backgraund/cta.jpg') no-repeat top;
+  background-size: cover;
+  color: #fff;
+}
+
+.section-form__wrap {
+  background-color: rgba(43, 43, 43, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.section__title-form {
+  color: #fff;
+  margin-bottom: 3.44rem;
+
+  @include tablets {
+    margin-bottom: 1.94rem;
+  }
+
+  @include phones {
+    margin-bottom: 2.62rem;
+  }
+}
+
+.section-map {
+  position: relative;
+}

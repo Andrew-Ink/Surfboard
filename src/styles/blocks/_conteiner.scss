@@ -1,0 +1,33 @@
+.conteiner {
+  // max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  max-width: 52.22rem;
+  margin: 0 auto;
+}
+
+.conteiner-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  max-width: 61.11rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.conteiner-map {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.conteiner__form {
+  padding: 3.4rem 0 4.7rem;
+}

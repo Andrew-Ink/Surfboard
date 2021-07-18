@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // min-width: 4.44rem;
+  padding: 0 2.5%;
+
+  @include tablets {
+    background-color: #1968B1;
+    height: 91px;
+    justify-content: space-between;
+  }
+}
+
+
